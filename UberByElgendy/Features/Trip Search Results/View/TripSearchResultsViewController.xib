@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripSearchResultsViewController" customModule="Hava" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="P9Y-uJ-NwD" id="TO7-PW-fSG"/>
+                <outlet property="tripStatusSegmentedControl" destination="Kd9-i0-PXX" id="4hA-SE-McL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P9Y-uJ-NwD">
+                    <rect key="frame" x="0.0" y="120" width="414" height="742"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PPl-4q-8mz"/>
+                        <outlet property="delegate" destination="-1" id="M44-zc-lc3"/>
+                    </connections>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kd9-i0-PXX">
+                    <rect key="frame" x="16" y="62" width="382" height="41"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.29803921570000003" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="mRv-Pa-SVa"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Completed"/>
+                        <segment title="Canceled"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kd9-i0-PXX" secondAttribute="trailing" constant="16" id="HuV-UR-K6m"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P9Y-uJ-NwD" secondAttribute="trailing" id="JlY-sO-a37"/>
+                <constraint firstItem="P9Y-uJ-NwD" firstAttribute="top" secondItem="Kd9-i0-PXX" secondAttribute="bottom" constant="18" id="Otd-6L-pbU"/>
+                <constraint firstItem="Kd9-i0-PXX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Tbv-rr-Z0B"/>
+                <constraint firstItem="P9Y-uJ-NwD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fCs-jp-OOI"/>
+                <constraint firstItem="Kd9-i0-PXX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="kQV-Io-8Xy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="P9Y-uJ-NwD" secondAttribute="bottom" id="zxV-ul-O6l"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="126.5625"/>
+        </view>
+    </objects>
+</document>
