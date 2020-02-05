@@ -9,5 +9,5 @@
 import Foundation
 
 struct AppConstants {
-    static let googleKey = "AIzaSyB_nuSpIJwUFr2WdS_ct4dWDWdy4JTCa3k"
+    static let googleKey = "AIzaSyB_nuSpIJwUFr2WdS_ct4dWDWdy4JTCa3k" // random key
 }
